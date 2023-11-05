@@ -13,7 +13,7 @@ RUN apt-get install -y less curl cron wget git libzip-dev mecab mecab-ipadic-utf
 # Setup PHP
 RUN docker-php-ext-install pdo_mysql zip
 
-RUN wget https://github.com/nihongodera/php-mecab/archive/master.zip \
+RUN wget https://github.com/dndeus/php-mecab/archive/master.zip \
     && unzip master.zip \
     && cd php-mecab-master/mecab \
     && phpize \
